@@ -1,0 +1,94 @@
+/** Husk å importere eventuelle fonter her 
+@import url('######');
+**/
+
+
+@import url("bootstrap-custom.min.css");
+html,body {
+	width: 100%;
+	max-width: 740px;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+#tinymce .btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+	text-decoration: none;
+}
+.introtext {
+	font-size: 1.2em;
+}
+table {
+	font-size: .8em;
+}
+table thead td {
+	font-weight: 700;
+}
+table td {
+	padding: .5rem;
+	border: 1px solid rgb(228,229,230);
+}
+table tbody tr:nth-child(even) td {
+	background-color: rgb(228,229,230,.5);
+}
+table tfoot td {
+	font-style: italic;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+p {
+	margin-bottom: .2rem;
+}
+
+
+/** ################################################## MEDIA QUERIES ################################################## **/
+html,body {	font-size: 14px; }
+
+/** Small devices (landscape phones, 576px and up) **/
+/** Bootstrap: -sm **/
+@media (min-width: 576px) {
+	html,body {	font-size: 15px; }
+}
+
+/** Medium devices (tablets, 768px and up) **/
+/** Bootstrap: -md **/
+@media (min-width: 768px) {
+	html,body {	font-size: 16px; }
+}
+
+/** Large devices (desktops, 992px and up) **/
+/** Bootstrap: -lg **/
+@media (min-width: 992px) {
+	html,body {	font-size: 17px; }
+}
+
+/** Extra large devices (large desktops, 1200px and up) **/
+/** Bootstrap: -xl **/
+@media (min-width: 1200px) {
+	html,body {	font-size: 20px; }
+}
+
+/** HD devices (extra large desktops, 1540px and up) **/
+@media (min-width: 1540px) {
+}
