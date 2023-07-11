@@ -2,20 +2,8 @@
 <html lang="no">
 
 <head>
-    <!--
-        DESIGNED & CODED WITH LOVE BY
-         ________  ________  _________  ________  ___  ___     
-        |\   ____\|\   __  \|\___   ___\\   ____\|\  \|\  \    
-        \ \  \___|\ \  \|\  \|___ \  \_\ \  \___|\ \  \\\  \   
-         \ \  \    \ \   __  \   \ \  \ \ \  \    \ \   __  \  
-          \ \  \____\ \  \ \  \   \ \  \ \ \  \____\ \  \ \  \ 
-           \ \_______\ \__\ \__\   \ \__\ \ \_______\ \__\ \__\
-            \|_______|\|__|\|__|    \|__|  \|_______|\|__|\|__|
-
-                            www.catchmedia.no
-        -->
     <base href="">
-    <title>Catch Media Frontend Mal</title>
+    <title>Rekdal Autospa</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,6 +21,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="assets/css/rte.css">
     <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="stylesheet" href="">
 
     <!-- ############# Insert GA/GTM ############## -->
 </head>
@@ -40,32 +29,25 @@
 <body id="id-[[*id]]" class="tpl-standard w-100 h-100">
     <div class="d-flex flex-column w-100 h-100 mx-auto">
         <!-- HEADER START -->
-        <header id="page-header" class="w-100 position-fixed bg-white">
-            <div class="container py-3">
-                <div class="row align-items-center ">
-                    <div class="col">
-                        <a class="pb-1 d-block" id="page-logo" href="#">
-                            <img src="assets/gfx/logo.png" alt="">
-                        </a>
-                    </div>
-                    <div class="col-auto">
-                        <nav id="page-nav" class="dropdown-nav">
-                            <ul class="m-0">
-                                <li><a class="py-1 ps-3" href="">Hvem kan søke</a></li>
-                                <li><a class="py-1 ps-3" href="">Tildelte gaver</a></li>
-                                <li><a class="py-1 ps-3" href="">Om stiftelsen</a></li>
-                                <li><a class="py-1 ps-3" href="">Spørsmål og svar</a></li>
-                            </ul>
-                            <button class="btn btn-primary ms-3">Søk støtte<i> :)</i></button>
-                        </nav>
-                    </div>
-                    <div class="col-auto">
-                        <div id="page-menu" class="d-inline-block fs-5 ms-3 py-1 text-white">
-                            <i class="fa-thin fa-bars"></i>
+        <header id="page-header" class="w-100 position-fixed">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Rekdal Autospa</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </nav>
         </header>
         <!-- HEADER END -->
 
@@ -73,119 +55,103 @@
         <main id="main" class="mb-auto">
 
             <!-- HERO / COVER -->
-            <section class="container-fluid">
+            <div class="hero-cover bg-secondary">
+                <div class="container h-100">
+                    <div class="row align-items-end h-100">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor, mauris vitae pretium
+                            mattis, tortor mauris molestie nisi.</p>
+                    </div>
+                </div>
+            </div>
+            <section class="container-fluid pb-5">
                 <div class="fullscreen">
-                    <div class="row">
-                        <img src="./assets/images/AdobeStock_520402576.jpeg" alt="" class="p-0" id="cover-img">
-                    </div>
-                </div>
-            </section>
-
-            <!-- COVER BUTTONS -->
-            <section class="container">
-                <div class="row" id="cover-buttons">
-                    <div class="col-12 col-md-4 mb-3">
-                        <div class="cover-button-box shadow p-4 text-center rounded-3 bg-white">
-                            <i>:)</i>
-                            <p>Hvem kan søke?</p>
-                            <a>Les mer?</a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 mb-3">
-                        <div class="cover-button-box shadow p-4 text-center rounded-3 bg-white">
-                            <i>:)</i>
-                            <p>Hvem kan søke?</p>
-                            <a>Les mer?</a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 mb-3">
-                        <div class="cover-button-box shadow p-4 text-center rounded-3 bg-white">
-                            <i>:)</i>
-                            <p>Hvem kan søke?</p>
-                            <a>Les mer?</a>
+                    <div class="row hero align-items-center">
+                        <div class="col-5 offset-1 hero-text">
+                            <h1 class="text-white">HIGH-END BILPLEIE FOR DITT KJØRETØY</h1>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- HEXAGONS -->
-            <div class="container">
-                <div class="row mt-5">
-                    <div class="col-12 col-md-6">
-                        <h2 class="mb-3">Vi bygger fremtidens nærmiljø</h2>
-                        <p class="mb-5">Vi får bidra til å bygge gode nærmiljø og realisere drømmer ved å gi gaver til
-                            frivilligheten
-                            og
-                            vårt engasjerte
-                            lokalsamfunn. Her kan du lese noen av de gode historiene vi har fått være med på å skape.
+            <div class="container mt-5">
+                <!-- Section 1 -->
+                <div class="row mb-5 pb-4">
+                    <div class="col-5">
+                        <h2 class="text-uppercase">We are the leaders in the automotive industry</h2>
+                    </div>
+                    <div class="col-7">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor, mauris vitae pretium
+                            mattis, tortor mauris molestie nisi.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         </p>
-                        <p><a href="#" class="fw-bold">Se flere historier :)</a></p>
+                        <a href="#">Learn more -></a>
+                    </div>
+                    <div class="col-12 mt-5">
+                        <img src="./assets/images/pic1.jpg" alt="" class="img-fluid">
                     </div>
                 </div>
-            </div>
-            <div class="container-fluid hex-showcase">
-                <div class="row">
-                    <div class="hex-grid">
-                        <div class="gallery">
-                            <img src="./assets/images/AdobeStock_251787228.jpeg" alt="">
-                            <img src="./assets/images/AdobeStock_251787228.png" alt="">
-                            <img src="./assets/images/AdobeStock_520402576.jpeg" alt="">
-                            <img src="./assets/images/AdobeStock_377066755.jpeg" alt="">
-                            <img src="./assets/images/AdobeStock_520402576.jpeg" alt="">
-                            <img src="./assets/images/AdobeStock_251787228.png" alt="">
-                            <img src="./assets/images/AdobeStock_251787228.jpeg" alt="">
+
+                <!-- Section 2 -->
+                <div class="row mb-5 pb-5">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="text-uppercase">We have best features</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor, mauris vitae pretium
+                            mattis.</p>
+                    </div>
+                    <div class="col-4">
+                        <h2 class="h2-number">01</h2>
+                        <h3>Quality Choice</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
+                        <a href="#">Learn more -></a>
+                    </div>
+                    <div class="col-4">
+                        <h2 class="h2-number">02</h2>
+                        <h3>Quality Choice</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
+                        <a href="#">Learn more -></a>
+                    </div>
+                    <div class="col-4">
+                        <h2 class="h2-number">03</h2>
+                        <h3>Quality Choice</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor.</p>
+                        <a href="#">Learn more -></a>
+                    </div>
+                </div>
+
+                <!-- Section 3-->
+                <div class="row mb-5 pb-4">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="text-uppercase">Our collection of cars</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor, mauris vitae pretium
+                            mattis. </p>
+                    </div>
+                    <div class="col-12">
+                        <div class="row controls">
+                            <div class="col-3 text-center miu-col">
+                                <button class="miu-btn" type="button" data-filter="all"><i class="fa-solid fa-circle fa-2xs me-2"></i>Populære</button>
+                            </div>
+                            <div class="col-3 text-center miu-col">
+                                <button class="miu-btn" type="button" data-filter=".ux-design"><i class="fa-solid fa-circle fa-2xs me-2"></i>Utvendig</button>
+                            </div>
+                            <div class="col-3 text-center miu-col">
+                                <button class="miu-btn" type="button" data-filter=".typography"><i class="fa-solid fa-circle fa-2xs me-2"></i>Innvendig</button>
+                            </div>
+                            <div class="col-3 text-center miu-col">
+                                <button class="miu-btn" type="button" data-filter=".test"><i class="fa-solid fa-circle fa-2xs me-2"></i>Annet</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center mb-3">
-                        <h3>Hva er nytt fra stiftelsen?</h3>
-                    </div>
-
                     <div class="col-12">
-                        <div class="row bg-light rounded-3">
-                            <div class="col-5 p-5 ms-3">
-                                <label>13.10.2021</label>
-                                <h3>Vi har et nytt styremedlem</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore
-                                    magn.</p>
-                                <i>:)</i>
-                            </div>
-                            <div class="col-5 offset-1 d-flex align-items-center">
-                                <div class="row">
-                                    <div class="news d-flex align-items-center py-1">
-                                        <div class="news-left d-flex align-items-center">
-                                            <i class="me-2">:)</i>
-                                            <h4 class="m-0">Årsrapport 2022</h4>
-                                        </div>
-                                        <label class="ms-auto">13.10.2021</label>
-                                    </div>
-                                    <div class="news d-flex align-items-center py-1">
-                                        <div class="news-left d-flex align-items-center">
-                                            <i class="me-2">:)</i>
-                                            <h4 class="m-0">Årsrapport 2022</h4>
-                                        </div>
-                                        <label class="ms-auto">13.10.2021</label>
-                                    </div>
-                                    <div class="news d-flex align-items-center py-1">
-                                        <div class="news-left d-flex align-items-center">
-                                            <i class="me-2">:)</i>
-                                            <h4 class="m-0">Årsrapport 2022</h4>
-                                        </div>
-                                        <label class="ms-auto">13.10.2021</label>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="container" id="produkter">
+                            <a href="/portfolio/item-1/" class="web-design">1</a>
+                            <a href="/portfolio/item-2/" class="mix web-design typography">2</a>
+                            <a href="/portfolio/item-3/" class="mix ux-design">3</a>
+                            <a href="/portfolio/item-4/" class="mix web-design ux-design">4</a>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        <footer class="bg-light" style="margin-top: 800px;">
+        <footer class="bg-light">
             <div class="container py-5">
                 <div class="row justify-content-between">
                     <div class="col-12 col-md-4 text-center">
@@ -219,17 +185,28 @@
         </footer>
     </div>
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/92cc2eddce.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.css" />
-    <script src="https://kit.fontawesome.com/dd6566724a.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
-    <script src="https://cdn.catchmedia.no/mixitup/current/js/mixitup-multifilter.min.js"></script>
-    <script src="https://cdn.catchmedia.no/mixitup/current/js/mixitup-pagination.min.js"></script>
+    <!-- MixItUp -->
+    <script src="./assets/js/mixitup.js"></script>
+    <!-- Kategori valg funksjon-->
+    <script>
+        var products = document.querySelector("#produkter");
+        var mixer = mixitup(products);
+
+
+    </script>
+    <!-- Sorterings funksjon -->
+    <!-- <script>
+		var selectSort = document.querySelector(".select-sort");
+
+		selectSort.addEventListener("change", function () {
+			var order = selectSort.value;
+
+			mixer.sort(order);
+		});
+	</script> -->
     <script src="assets/js/site.js"></script>
 </body>
 

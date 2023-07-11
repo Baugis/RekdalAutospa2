@@ -3,7 +3,7 @@
 **/
 
 
-@import url("bootstrap-custom.min.css");
+@import url("./bootstrap-custom.min.css");
 html,body {
 	width: 100%;
 	max-width: 740px;
@@ -58,12 +58,12 @@ li {
 }
 
 p {
-	margin-bottom: .2rem;
+	margin-bottom: 0.8rem;
 }
 
 
 /** ################################################## MEDIA QUERIES ################################################## **/
-html,body {	font-size: 14px; }
+html,body {	font-size: 18px; }
 
 /** Small devices (landscape phones, 576px and up) **/
 /** Bootstrap: -sm **/

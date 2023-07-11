@@ -13,6 +13,7 @@ $h4-font-size:                $font-size-base * 0.9;
 $h5-font-size:                $font-size-base * 0.9;
 $h6-font-size:                $font-size-base * .8125;
 
+$paragraph-margin-bottom:     2rem !default;
 
 $form-label-font-size:        .8125rem;
 
@@ -22,10 +23,10 @@ $breadcrumb-item-padding-x:   .25rem !default;
 /** Les mer om fargevalg og muligheter her 
 https://getbootstrap.com/docs/5.0/customize/color/
 **/
-$primary:                    #F6A826;
-$secondary:                  #C3BAB9;
-$dark:                       #343A40;
-$light:                      #F0ECEA;
+$primary:                    #0f1014;
+$secondary:                  #151a1a;
+$dark:                       #5f5e61;
+$light:                      #afafb1;
 $info:                       #E1DCDC;
 $danger:                     #DC3545;
 $success:                    #28A745;
@@ -59,6 +60,13 @@ $input-btn-padding-x:         1.950rem !default;
 
 $enable-shadows: true;
 $btn-box-shadow:              0 0.5rem 1rem rgba(0,0,0,.15);
+
+//Nav
+$nav-link-font-size:                null !default;
+$nav-link-font-weight:              null !default;
+$nav-link-color:                    var(--#{$prefix}link-color) !default;
+$nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
+$nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
 
 
 // Import Bootstrap
