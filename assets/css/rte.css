@@ -2,15 +2,15 @@
 @import url('######');
 **/
 
-
-@import url("./bootstrap-custom.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+@import url("../css/bootstrap-custom.min.css");
 html,body {
 	width: 100%;
 	max-width: 740px;
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	font-weight: 400;
 }
 #tinymce .btn {
@@ -86,7 +86,7 @@ html,body {	font-size: 18px; }
 /** Extra large devices (large desktops, 1200px and up) **/
 /** Bootstrap: -xl **/
 @media (min-width: 1200px) {
-	html,body {	font-size: 20px; }
+	html,body {	font-size: 18px; }
 }
 
 /** HD devices (extra large desktops, 1540px and up) **/

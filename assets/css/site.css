@@ -26,10 +26,17 @@ h2,
 h3,
 h4,
 h5,
-h6,
-a {
+h6 {
   color: white;
   margin-bottom: 1rem;
+}
+
+a {
+  color: white;
+}
+
+h3 {
+  font-weight: 300;
 }
 
 video {
@@ -157,6 +164,10 @@ select {
   max-width: 900px;
 }
 
+.accordion-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+}
+
 
 
 /** ################################################## Custom styling start ########################################## **/
@@ -169,13 +180,12 @@ select {
   z-index: 2;
 }
 
-#page-nav ul {
-  display: inline;
-  padding-left: 0;
+#navbar a {
+  margin: 0 0.5rem;
 }
 
-#page-nav li {
-  display: inline
+.active {
+  border-bottom: 2px solid white;
 }
 
 #cover-img {
@@ -199,20 +209,20 @@ select {
 }
 
 .hero-cover {
-  width: 25vw;
+  width: 50vw;
   height: 100%;
   position: absolute;
 }
 
 .h2-number {
-  font-weight: 200;
+  font-weight: 500;
   color: #5f5e61;
 }
 
 .miu-btn {
   background-color: transparent;
   border: none;
-  font-weight: 200;
+  font-weight: 500;
   color: #afafb175;
   padding-bottom: 0.8rem;
   border-bottom: 3px solid #afafb175;
@@ -228,17 +238,81 @@ select {
   border-bottom: 3px solid #c6c6c9;
 }
 
+/* Projects */
+#prosjekter {
+  height: 590px;
+  overflow: hidden;
+}
+
+#prosjekter img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 0.6rem;
+}
+
+.prosjekter-box {
+  border-radius: 0.5rem;
+  height: 270px;
+}
+
+.box1 {
+  background: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.prosjekter-info {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  opacity: 0;
+}
+
+.prosjekter-box:hover > .prosjekter-info {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* FAQ */
+.faq-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Footer */
+.logo {
+  height: 55px;
+}
+
 
 /** ################################################## MEDIA QUERIES ################################################## **/
 /** Small devices (landscape phones, 576px and up) **/
 /** Bootstrap: -sm **/
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+  .hero-cover {
+    width: 45vw;
+  }
+
+  #prosjekter {
+    height: 870px;
+  }
+}
 
 /** Medium devices (tablets, 768px and up) **/
 /** Bootstrap: -md **/
 @media (min-width: 768px) {
   :root {
     --container-max-width: 720px;
+  }
+
+  .hero-cover {
+    width: 35vw;
+  }
+
+  #prosjekter {
+    height: 570px;
   }
 }
 
@@ -255,6 +329,10 @@ select {
 @media (min-width: 1200px) {
   :root {
     --container-max-width: 1140px;
+  }
+
+  .hero-cover {
+    width: 25vw;
   }
 }
 

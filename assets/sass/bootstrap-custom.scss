@@ -8,8 +8,8 @@ $headings-font-weight:        600;
 $font-size-base:             1rem;
 $h1-font-size:                $font-size-base * 2.25;
 $h2-font-size:                $font-size-base * 1.65;
-$h3-font-size:                $font-size-base * 1.25;
-$h4-font-size:                $font-size-base * 0.9;
+$h3-font-size:                $font-size-base * 1.44;
+$h4-font-size:                $font-size-base * 1.25;
 $h5-font-size:                $font-size-base * 0.9;
 $h6-font-size:                $font-size-base * .8125;
 
@@ -17,6 +17,7 @@ $paragraph-margin-bottom:     2rem !default;
 
 $form-label-font-size:        .8125rem;
 
+$grid-gutter-width:           1rem;
 
 $breadcrumb-item-padding-x:   .25rem !default;
 /** Colors **/
@@ -61,13 +62,18 @@ $input-btn-padding-x:         1.950rem !default;
 $enable-shadows: true;
 $btn-box-shadow:              0 0.5rem 1rem rgba(0,0,0,.15);
 
-//Nav
-$nav-link-font-size:                null !default;
-$nav-link-font-weight:              null !default;
-$nav-link-color:                    var(--#{$prefix}link-color) !default;
-$nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
-$nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
+//Accordion
+$accordion-bg:                                    $primary;
+$accordion-color:                                 light;
+$accordion-button-active-bg:                      $primary;
+$accordion-button-active-color:                   white;
+$accordion-border-width:                          none;
+$accordion-icon-color:                            white;
 
+//Nav
+$navbar-dark-color:                               white;
+$navbar-nav-link-padding-x:                       0;
+$nav-link-padding-y:                              0.2rem;
 
 // Import Bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
