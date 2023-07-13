@@ -238,6 +238,31 @@ select {
   border-bottom: 3px solid #c6c6c9;
 }
 
+.controls-tjenester .mixitup-control-active {
+  border: 0.14rem solid white;
+}
+
+.partners {
+  overflow: scroll;
+}
+
+.partners::-webkit-scrollbar {
+  display: none;
+}
+
+.partners img {
+  max-height: 50px;
+  margin-right: 2rem;
+}
+
+.priser-cover {
+  height: 45vh;
+}
+
+.prices:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+}
+
 /* Projects */
 #prosjekter {
   height: 590px;
