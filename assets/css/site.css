@@ -174,9 +174,7 @@ select {
 /** ################################################## Custom styling start ########################################## **/
 
 /* MODAL */
-.navbar-modal li {
-  
-}
+
 
 #page-logo img {
   max-width: 15rem;
@@ -311,7 +309,37 @@ header {
 }
 
 .box1 {
-  background: url("../images/hero.jpg");
+  background: url("../images/car1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.box2 {
+  background: url("../images/car2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.box3 {
+  background: url("../images/car3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.box4 {
+  background: url("../images/car4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.box5 {
+  background: url("../images/car5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.box6 {
+  background: url("../images/car6.jpg");
   background-size: cover;
   background-position: center;
 }
