@@ -30,431 +30,237 @@
     <div class="d-flex flex-column w-100 h-100 mx-auto">
         <!-- HEADER START -->
         <header id="page-header" class="w-100 position-fixed">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark py-3">
                 <div class="container">
-                    <a class="navbar-brand" href="#">Rekdal Autospa</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <a class="navbar-brand" href="./index.html"><img src="./assets/gfx/logo.png" alt=""></a>
+                    <i class="fa-solid fa-bars fa-lg d-lg-none" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"></i>
                     <div class="collapse navbar-collapse" id="navbar">
-                        <div class="navbar-nav ms-auto">
-                            <a class="nav-link" href="#">Hjem</a>
-                            <a class="nav-link" href="#">Tjenester</a>
-                            <a class="nav-link active" aria-current="page" href="#">Prisliste</a>
-                            <a class="nav-link" href="#">Kontakt</a>
-                        </div>
+                        <a class="navbar-nav ms-auto">
+                            <a class="nav-link" href="./index.html">Hjem</a>
+                            <a class="nav-link" href="./tjenester.html">Tjenester</a>
+                            <a class="nav-link active" aria-current="page" href="./priser.html">Priser</a>
+                            <a class="nav-link" href="./om.html">Om oss</a>
+                        </a>
                     </div>
                 </div>
             </nav>
         </header>
         <!-- HEADER END -->
 
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen-lg-down">
+                <div class="modal-content">
+                    <div class="modal-body bg-primary">
+                        <div class="container d-flex flex-column">
+                            <div class="header-modal d-flex justify-content-between mb-4">
+                                <h2>Rekdal Autospa</h2>
+                                <div class="ms-auto"><i class="fa-solid fa-arrow-right-to-bracket fa-lg"
+                                        data-bs-dismiss="modal" aria-label="Close"></i></div>
+                            </div>
+                            <ul class="list-unstyled navbar-modal text-center">
+                                <li>
+                                    <a href="./index.html">
+                                        <h3 class="my-4">Hjem</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./tjenester.html">
+                                        <h3 class="my-4">Tjenester</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./priser.html">
+                                        <h3 class="my-4">Priser</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./om.html">
+                                        <h3 class="my-4">Om oss</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!--  MAIN  START -->
         <main id="main" class="mb-auto">
 
-            <section class="bg-secondary">
+            <section class="bg-secondary ">
                 <div class="container priser-cover d-flex flex-column justify-content-center">
                     <div class="row align-items-center justify-content-center mb-5 mt-5">
-                        <div class="col-7 text-center">
-                            <h1>Priser</h1>
+                        <div class="col-md-7 text-center">
+                            <h1 class="mt-5 mt-md-0">Priser</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta, velit eu congue
                                 iaculis, nisl dui porttitor justo, ut venenatis urna lectus et nisi. Curabitur lectus
                                 leo,
                                 congue ac ullamcorper non, lobortis vitae erat.</p>
+                            <a href="#ekstrior" class="me-4">Ekstriør</a>
+                            <a href="#interior">Interiør</a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <div class="container mt-5">
-                <!-- <div class="row controls controls-tjenester">
-                    <div class="col-12 text-center">
-                        <button class="btn btn-secondary" type="button" data-filter="all"></i>Alle</button>
-                        <button class="btn btn-primary" type="button" data-filter=".vask"></i>Vask</button>
-                        <button class="btn btn-primary" type="button" data-filter=".polering">Polering</button>
-                        <button class="btn btn-primary" type="button" data-filter=".coating">Coating</button>
-                        <button class="btn btn-primary" type="button" data-filter=".interior">Interiørvask</button>
-                        <button class="btn btn-primary" type="button" data-filter=".skinn">Skinnreparasjon</button>
-
-                    </div>
-                </div> -->
+            <div class="container mt-5 w-75">
                 <div class="row mb-5" id="tjenester">
-                    <div class="col-6">
-                        <div class="exterior-prices bg-secondary p-3">
-                            <h2 class="border-bottom text-center pb-2">Eksteriør</h2>
-                            <div class="row justify-content-between prices mb-4 mix vask">
-                                <div class="col-8">
-                                    <h4>Spavask med voks</h4>
-                                    <p>Forursensninger som asfaltflekker og piggstøv fjenes med dedikert kjemi,
-                                        etterfulgt av skånsom håndvask før den toppes med våtvoks.</p>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-between align-items-end fw-bold">
-                                    <h4 class="fw-bold">Fra 1 250,-</h4>
+                    <h3 id="ekstrior" class="mb-3 ms-md-3">Ekstriør</h3>
+                    <div class="col-12 mb-4 priser-list">
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-md-9">
+                                <h5>Spavask med voks</h5>
+                                <p>Forursensninger som asfaltflekker og piggstøv fjenes med dedikert kjemi, etterfulgt
+                                    av skånsom håndvask før den toppes med våtvoks.</p>
+                            </div>
+                            <div class="col-md-2 d-flex flex-column justify-content-start align-items-start">
+                                <h5>Fra 1 250,-</h5>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-md-9">
+                                <h5>Koch Chemie 1K Nano</h5>
+                                <p>Spavask, etterfulgt av finpolering av lakken for å øke glans og forberede overfalten
+                                </p>
+                                <div class="holdbarhet d-flex justify-content-between fw-bold">
+                                    <p>Forventet holdbarhet <label class="d-md-none">Inntil 12 mnd</label></p>
                                 </div>
                             </div>
-
-                            <div class="row justify-content-between prices mb-4 mix vask">
-                                <div class="col-8">
-                                    <h4>Koch Chemie 1K Nano</h4>
-                                    <p>Spavask, etterfulgt av finpolering av lakken for å øke glans og forberede
-                                        overfalten
-                                    </p>
-                                    <div class="holdbarhet d-flex justify-content-between fw-bold">
-                                        <p>Forventet holdbarhet</p>
-                                    </div>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-between align-items-end fw-bold">
-                                    <h4>Fra 5 000,-</h4>
-                                    <p>Inntil 12 mnd</p>
+                            <div class="col-md-2 d-flex flex-column justify-content-between align-items-start">
+                                <h5>Fra 5 000,-</h5>
+                                <p class="fw-bold d-none d-md-inline-block">Inntil 12 mnd</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-md-9">
+                                <h5>Koch Chemie C0.02</h5>
+                                <p>Spavask, etterfulgt av finpolering av lakken for å øke glans of forberede overflaten
+                                    for coating.</p>
+                                <div class="holdbarhet d-flex justify-content-between fw-bold">
+                                    <p>Forventet holdbarhet <label class="d-md-none">Inntil 24 mnd</label></p>
                                 </div>
                             </div>
-
-                            <div class="row justify-content-between prices mb-4">
-                                <div class="col-8">
-                                    <h4>Koch Chemie C0.02</h4>
-                                    <p>Spavask, etterfulgt av finpolering av lakken for å øke glans of forberede
-                                        overflaten for coating.</p>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-between align-items-end fw-bold">
-                                    <h4>Fra 8 000,-</h4>
-                                    <p>Inntil 24 mnd</p>
+                            <div class="col-md-2 d-flex flex-column justify-content-between align-items-start">
+                                <h5>Fra 8 000,-</h5>
+                                <p class="fw-bold d-none d-md-inline-block">Inntil 24 mnd</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-md-9">
+                                <h5>Titan Zeus Elite /PX10</h5>
+                                <p>Spavask, etterfulgt av finpolering av lakken for å øke glans og forberede overflaten
+                                    for to lag coating.</p>
+                                <div class="holdbarhet d-flex justify-content-between fw-bold">
+                                    <p>Forventet holdbarhet <label class="d-md-none">Inntil 36 mnd</label></p>
                                 </div>
                             </div>
-
-                            <div class="row justify-content-between prices mb-4">
-                                <div class="col-8">
-                                    <h4>Titan Zeus Elite /PX10</h4>
-                                    <p>Spavask, etterfulgt av finpolering av lakken for å øke glans og forberede
-                                        overflaten for to lag coating.</p>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-between align-items-end fw-bold">
-                                    <h4>Fra 12 000,-</h4>
-                                    <p>Inntil 36 mnd</p>
+                            <div class="col-md-2 d-flex flex-column justify-content-between align-items-start">
+                                <h5>Fra 12 000,-</h5>
+                                <p class="fw-bold d-none d-md-inline-block">Inntil 36 mnd</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-md-9">
+                                <h5>Titan Dark Matter Technology</h5>
+                                <p>Spavask, etterfulgt av finpolering av lakken for å øke og forberede overflaten for
+                                    tre lag coating.</p>
+                                <div class="holdbarhet d-flex justify-content-between fw-bold">
+                                    <p>Forventet holdbarhet <label class="d-md-none">Inntil 48 mnd</label></p>
                                 </div>
                             </div>
-
-                            <div class="row justify-content-between prices mb-4">
-                                <div class="col-8">
-                                    <h4>Titan Dark Matter Technology</h4>
-                                    <p>Spavask, etterfulgt av finpolering av lakken for å øke og forberede overflaten
-                                        for tre lag coating.</p>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-between align-items-end fw-bold">
-                                    <h4>Fra 15 000,-</h4>
-                                    <p>Inntil 48 mnd</p>
-                                </div>
+                            <div class="col-md-2 d-flex flex-column justify-content-between align-items-start">
+                                <h5>Fra 15 000,-</h5>
+                                <p class="fw-bold d-none d-md-inline-block">Inntil 48 mnd</p>
                             </div>
-
-                            <div class="row justify-content-between prices mb-4">
-                                <div class="col-8">
-                                    <h4>Glassbehandling</h4>
-                                    <p>Alle vinduer vaskes grundig ned, rester av kalk og mineraler fjernes før glasset
-                                        forsegles.</p>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-between align-items-end fw-bold">
-                                    <h4>Fra 4 000,-</h4>
-                                </div>
+                        </div>
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-md-9">
+                                <h5>Glassbehandling</h5>
+                                <p>Alle vinduer vaskes grundig ned, rester av kalk og mineraler fjernes før glasset
+                                    forsegles.</p>
                             </div>
-
-                            <div class="row justify-content-between prices mb-4">
-                                <div class="col-8">
-                                    <h4>Coating av felger</h4>
-                                    <p>Felgene vaskes grundig ned før de finpoleres og beskyttes med to lag coating.</p>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-between align-items-end fw-bold">
-                                    <h4>Fra 4 000,-</h4>
-                                </div>
+                            <div class="col-md-2 d-flex flex-column justify-content-start align-items-start">
+                                <h5>Fra 4 000,-</h5>
                             </div>
-
-                            <div class="row justify-content-between prices mb-4">
-                                <div class="col-8">
-                                    <h4>Klargjøring for salg</h4>
-                                    <p>Spavask etterfulgt av en-stegspolering for lett ripefjerning og øke glans, toppes
-                                        med våtvoks. Interiør og overflater blir støvsugd og vakset, matter og vinduer
-                                        blir vasket.</p>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-between align-items-end fw-bold">
-                                    <h4>Fra 4 000,-</h4>
-                                </div>
+                        </div>
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-md-9">
+                                <h5>Coating av felger</h5>
+                                <p>elgene vaskes grundig ned før de finpoleres og beskyttes med to lag coating.</p>
                             </div>
-
-                            <div class="row">
+                            <div class="col-md-2 d-flex flex-column justify-content-start align-items-start">
+                                <h5>Fra 4 000,-</h5>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-md-9">
+                                <h5>Klargjøring for salg</h5>
+                                <p>Spavask etterfulgt av en-stegspolering for lett ripefjerning og øke glans, toppes med
+                                    våtvoks. Interiør og overflater blir støvsugd og vakset, matter og vinduer blir
+                                    vasket.</p>
+                            </div>
+                            <div class="col-md-2 d-flex flex-column justify-content-start align-items-start">
+                                <h5>Fra 4 000,-</h>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-11">
                                 <p class="fw-bold">*Korrigering/ripefjerning vil komme i tillegg</p>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-6">
-                        <div class="exterior-prices bg-secondary p-3">
-                            <h2 class="border-bottom text-center pb-2">Interiør</h2>
-                            <div class="row justify-content-between prices mb-4">
-                                <div class="col-8">
-                                    <h4>Skinninteriør</h4>
-                                    <p>Skinnoverflater renses og pleies med produkter cra Colourlock som fjerner
-                                        misfarging og forurensninger i overlfaten. Resten av interiøret blir støvsugd og
-                                        tørket over, matter og vinduer blir vasket.</p>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-between align-items-end fw-bold">
-                                    <h4>Fra 3 000,-</h4>
-                                </div>
+                    <h3 id="interior" class="mb-3 ms-md-3">Interiør</h3>
+                    <div class="col-12 mb-4">
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-md-9">
+                                <h5>Skinninteriør</h5>
+                                <p>Skinnoverflater renses og pleies med produkter cra Colourlock som fjerner misfarging
+                                    og forurensninger i overlfaten. Resten av interiøret blir støvsugd og tørket over,
+                                    matter og vinduer blir vasket.</p>
                             </div>
-
-                            <div class="row justify-content-between prices mb-4">
-                                <div class="col-8">
-                                    <h4>Stoffinteriør</h4>
-                                    <p>Dedikerte renseprodukter jobbes inn i stoffet med børste, før hele setet
-                                        dyprenses med tekstilrenser. Resten av interiøret blir støvsugd og tørket over,
-                                        matter og vinduer blir vasket.</p>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-between align-items-end fw-bold">
-                                    <h4>Fra 3 000,-</h4>
-                                </div>
+                            <div class="col-md-2 d-flex flex-column justify-content-start align-items-start">
+                                <h5>Fra 3 000,-</h5>
                             </div>
-
-                            <div class="row justify-content-between prices mb-4">
-                                <div class="col-8">
-                                    <h4>Luktfjerning/Ozonering</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta, velit eu
-                                        congue iaculis, nisl dui porttitor justo, ut venenatis urna lectus et nisi.</p>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-between align-items-end fw-bold">
-                                    <h4>Ta kontakt</h4>
-                                </div>
+                        </div>
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-md-9">
+                                <h5>Stoffinteriør</h5>
+                                <p>Dedikerte renseprodukter jobbes inn i stoffet med børste, før hele setet dyprenses
+                                    med tekstilrenser. Resten av interiøret blir støvsugd og tørket over, matter og
+                                    vinduer blir vasket.</p>
                             </div>
-
-                            <div class="row justify-content-between prices mb-4">
-                                <div class="col-8">
-                                    <h4>Farging/rep. av interiør</h4>
-                                    <p>Reparasjon av fargeslitasje eller skader som hull, rifter eller lignende utbedres
-                                        ved hjelp av Colourlock produkter.</p>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-between align-items-end fw-bold">
-                                    <h4>Ta kontakt</h4>
-                                </div>
+                            <div class="col-md-2 d-flex flex-column justify-content-start align-items-start">
+                                <h5>Fra 3 000,-</h5>
                             </div>
-
-                            <div class="row">
+                        </div>
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-md-9">
+                                <h5>Luktfjerning/Ozonering</h5>
+                            </div>
+                            <div class="col-md-2 d-flex flex-column justify-content-start align-items-start">
+                                <h5>Ta kontakt</h5>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-md-9">
+                                <h5>Farging/rep. av interiør</h5>
+                                <p>Reparasjon av fargeslitasje eller skader som hull, rifter eller lignende utbedres ved
+                                    hjelp av Colourlock produkter.</p>
+                            </div>
+                            <div class="col-md-2 d-flex flex-column justify-content-start align-items-start">
+                                <h5>Ta kontakt</h5>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-md-11">
                                 <p class="fw-bold">Pakker og behandlinger kan skreddersys etter ønske, ta kontakt for
                                     anbefaling i forhold til ditt budsjett og din bil!</p>
                             </div>
                         </div>
                     </div>
-
-
-
-                    <!--  <div class="col-6 mb-3 mix vask">
-                        <div class="tjenester-box bg-secondary rounded-3 p-3 h-100 d-flex align-items-center">
-                            <div class="row justify-content-between">
-                                <div class="col-8">
-                                    <h3 class="fw-bold">Spavask med voks</h2>
-                                        <p>Forursensninger som asfaltflekker og piggstøv fjenes med dedikert kjemi,
-                                            etterfulgt av skånsom håndvask før den toppes med våtvoks.</p>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-                                    <h2>Fra 1 250,-</h2>
-                                    <button class="btn btn-primary">Bestill</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-6 mb-3 mix polering coating">
-                        <div class="tjenester-box bg-secondary rounded-3 p-3 h-100 d-flex align-items-center">
-                            <div class="row justify-content-between">
-                                <div class="col-8">
-                                    <h3 class="fw-bold">Koch Chemie 1K Nano</h2>
-                                        <p>Spavask, etterfulgt av finpolering av lakken for å øke glans og forberede
-                                            overfalten</p>
-                                        <div class="holdbarhet d-flex justify-content-between fw-bold">
-                                            <p>Forventent holdbarhet</p>
-                                            <p>Inntil 12 mnd</p>
-                                        </div>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-                                    <h2>Fra 5 000,-</h2>
-                                    <button class="btn btn-primary">Bestill</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-6 mb-3 mix polering coating">
-                        <div class="tjenester-box bg-secondary rounded-3 p-3 h-100 d-flex align-items-center">
-                            <div class="row justify-content-between">
-                                <div class="col-8">
-                                    <h3 class="fw-bold">Koch Chemie C0.02</h2>
-                                        <p>Spavask, etterfulgt av finpolering av lakken for å øke glans of forberede
-                                            overflaten for coating.</p>
-                                        <div class="holdbarhet d-flex justify-content-between fw-bold">
-                                            <p>Forventent holdbarhet</p>
-                                            <p>Inntil 24 mnd</p>
-                                        </div>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-                                    <h2>Fra 8 000,-</h2>
-                                    <button class="btn btn-primary">Bestill</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-6 mb-3 mix polering coating">
-                        <div class="tjenester-box bg-secondary rounded-3 p-3 h-100 d-flex align-items-center">
-                            <div class="row justify-content-between">
-                                <div class="col-8">
-                                    <h3 class="fw-bold">Titan Zeus Elite /PX10</h2>
-                                        <p>Spavask, etterfulgt av finpolering av lakken for å øke glans og forberede
-                                            overflaten for to lag coating.</p>
-                                        <div class="holdbarhet d-flex justify-content-between fw-bold">
-                                            <p>Forventent holdbarhet</p>
-                                            <p>Inntil 36 mnd</p>
-                                        </div>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-                                    <h2>Fra 12 000,-</h2>
-                                    <button class="btn btn-primary">Bestill</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-6 mb-3 mix polering coating">
-                        <div class="tjenester-box bg-secondary rounded-3 p-3 h-100 d-flex align-items-center">
-                            <div class="row justify-content-between">
-                                <div class="col-8">
-                                    <h3 class="fw-bold">Titan Dark Matter Technology</h2>
-                                        <p>Spavask, etterfulgt av finpolering av lakken for å øke og forberede
-                                            overflaten for tre lag coating.</p>
-                                        <div class="holdbarhet d-flex justify-content-between fw-bold">
-                                            <p>Forventent holdbarhet</p>
-                                            <p>Inntil 48 mnd</p>
-                                        </div>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-                                    <h2>Fra 15 000,-</h2>
-                                    <button class="btn btn-primary">Bestill</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-6 mb-3 mix vask coating">
-                        <div class="tjenester-box bg-secondary rounded-3 p-3 h-100 d-flex align-items-center">
-                            <div class="row justify-content-between">
-                                <div class="col-8">
-                                    <h3 class="fw-bold">Glassbehandling</h2>
-                                        <p>Alle vinduer vaskes grundig ned, rester av kalk og mineraler fjernes før
-                                            glasset forsegles.</p>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-                                    <h2>Fra 4 000,-</h2>
-                                    <button class="btn btn-primary">Bestill</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-6 mb-3 mix vask polering coating">
-                        <div class="tjenester-box bg-secondary rounded-3 p-3 h-100 d-flex align-items-center">
-                            <div class="row justify-content-between">
-                                <div class="col-8">
-                                    <h3 class="fw-bold">Coating av felger</h2>
-                                        <p>Felgene vaskes grundig ned før de finpoleres og beskyttes med to lag coating.
-                                        </p>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-                                    <h2>Fra 4 000,-</h2>
-                                    <button class="btn btn-primary">Bestill</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-6 mb-3 mix vask polering interiør">
-                        <div class="tjenester-box bg-secondary rounded-3 p-3 h-100 d-flex align-items-center">
-                            <div class="row justify-content-between">
-                                <div class="col-8">
-                                    <h3 class="fw-bold">Klargjøring for salg</h2>
-                                        <p>Spavask etterfulgt av en-stegspolering for lett ripefjerning og øke glans,
-                                            toppes med våtvoks. Interiør og overflater blir støvsugd og vakset, matter
-                                            og vinduer blir vasket.</p>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-                                    <h2>Fra 4 000,-</h2>
-                                    <button class="btn btn-primary">Bestill</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="col-6 mb-3 mix interior">
-                        <div class="tjenester-box bg-secondary rounded-3 p-3 h-100 d-flex align-items-center">
-                            <div class="row justify-content-between">
-                                <div class="col-8">
-                                    <h3 class="fw-bold">Skinninteriør</h2>
-                                        <p>Skinnoverflater renses og pleies med produkter cra Colourlock som fjerner
-                                            misfarging og forurensninger i overlfaten. Resten av interiøret blir
-                                            støvsugd og tørket over, matter og vinduer blir vasket.</p>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-                                    <h2>Fra 3 000,-</h2>
-                                    <button class="btn btn-primary">Bestill</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 mb-3 mix interior">
-                        <div class="tjenester-box bg-secondary rounded-3 p-3 h-100 d-flex align-items-center">
-                            <div class="row justify-content-between">
-                                <div class="col-8">
-                                    <h3 class="fw-bold">Stoffinteriør</h2>
-                                        <p>Dedikerte renseprodukter jobbes inn i stoffet med børste, før hele setet
-                                            dyprenses med tekstilrenser. Resten av interiøret blir støvsugd og tørket
-                                            over, matter og vinduer blir vasket.</p>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-                                    <h2>Fra 3 000,-</h2>
-                                    <button class="btn btn-primary">Bestill</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 mb-3 mix skinn">
-                        <div class="tjenester-box bg-secondary rounded-3 p-3 h-100 d-flex align-items-center">
-                            <div class="row justify-content-between">
-                                <div class="col-8">
-                                    <h3 class="fw-bold">Farging/rep. av interiør</h2>
-                                        <p>Reparasjon av fargeslitasje eller skader som hull, rifter eller lignende
-                                            utbedres ved hjelp av Colourlock produkter.</p>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-                                    <h2>Ta kontakt</h2>
-                                    <button class="btn btn-primary">Bestill</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 mb-3 mix interior">
-                        <div class="tjenester-box bg-secondary rounded-3 p-3 h-100 d-flex align-items-center">
-                            <div class="row justify-content-between">
-                                <div class="col-8">
-                                    <h3 class="fw-bold">Luktfjerning/Ozonering</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lorem at
-                                            lorem imperdiet dignissim. Pellentesque eget eros ex. Quisque maximus
-                                            euismod laoreet.</p>
-                                </div>
-                                <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-                                    <h2>Ta kontakt</h2>
-                                    <button class="btn btn-primary">Bestill</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
 
@@ -486,28 +292,26 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/92cc2eddce.js" crossorigin="anonymous"></script>
-
-    <!-- MixItUp -->
+    <script src="assets/js/site.js"></script>
+    <script type="module" src="./assets/js/bootstrap.js"></script>
     <script src="./assets/js/mixitup.js"></script>
-    <!-- Kategori valg funksjon-->
+
     <script>
         var products = document.querySelector("#tjenester");
         var mixer = mixitup(products);
 
+        /* NAVBAR SCROLL */
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            const scrolled = window.scrollY;
 
+            if (scrolled > 5) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
     </script>
-    <!-- Sorterings funksjon -->
-    <!-- <script>
-		var selectSort = document.querySelector(".select-sort");
-
-		selectSort.addEventListener("change", function () {
-			var order = selectSort.value;
-
-			mixer.sort(order);
-		});
-	</script> -->
-    <script src="assets/js/site.js"></script>
-    <script type="module" src="./assets/js/bootstrap.js"></script>
 </body>
 
 </html>

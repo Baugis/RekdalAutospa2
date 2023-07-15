@@ -1,17 +1,12 @@
-# Catch Media sin frontend mal til bruk på nye nettsider:sunglasses:
+# Frontend mal til bruk på nye nettsider:sunglasses:
 
 ## Fremgangsmåte:
-
-1. Logg inn på Github med Catch sin bruker
-    ### Innloggingsinformasjon
-    - **brukernavn**: post@catchmedia
-    - **passord**:    detvanlige
     
-2. Naviger til "FrontEndMal" repository.
-3. Øverst til høyre er det en grønn knapp "Use this template" og velg "Create new repository"
-4. Fyll inn repository navn, og se at Catch sin bruker er "owner".
-5. Velg private
-6. Når dette er gjort, gå inn på det nye prosjektet, velg settings, så velg collaborators og inviter din egen(_eller ønsket_) bruker til samarbeid.
+1. Naviger til "FrontEndMal" repository.
+2. Øverst til høyre er det en grønn knapp "Use this template" og velg "Create new repository"
+3. Fyll inn repository navn, og se at Catch sin bruker er "owner".
+4. Velg private
+5. Når dette er gjort, gå inn på det nye prosjektet, velg settings, så velg collaborators og inviter din egen(_eller ønsket_) bruker til samarbeid.
 
 ### Voila! Det er nå klart til bruk :tada: :boom:
 

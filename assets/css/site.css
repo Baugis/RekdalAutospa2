@@ -40,6 +40,10 @@ h3 {
   font-weight: 300;
 }
 
+h5 {
+  margin-bottom: 0.2rem;
+}
+
 video {
   display: block;
 }
@@ -172,10 +176,6 @@ select {
 
 
 /** ################################################## Custom styling start ########################################## **/
-
-/* MODAL */
-
-
 #page-logo img {
   max-width: 15rem;
 }
@@ -199,6 +199,10 @@ header {
 .navbar.scrolled {
   background-color: #0f1014;
   transition: all .3s;
+}
+
+.navbar-brand img {
+  height: 30px;
 }
 
 #navbar a {
@@ -340,7 +344,43 @@ header {
 }
 
 .box6 {
-  background: url("../images/car6.jpg");
+  background: url("../images/car9.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.box7 {
+  background: url("../images/bat1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.box8 {
+  background: url("../images/bat1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.box9 {
+  background: url("../images/bat1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.box10 {
+  background: url("../images/bat1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.box11 {
+  background: url("../images/bat1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.box12 {
+  background: url("../images/bat1.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -404,12 +444,61 @@ swiper-slide {
 
 /* Footer */
 .logo {
-  height: 55px;
+  height: 35px;
 }
 
-/* Contact form */
+/* Om oss bilder */
+.om-bilder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Pic1 Pic1 Pic1 Pic1 Pic1 Pic2 Pic2 Pic2 Pic4 Pic4 Pic4 Pic4"
+    "Pic1 Pic1 Pic1 Pic1 Pic1 Pic2 Pic2 Pic2 Pic4 Pic4 Pic4 Pic4"
+    "Pic1 Pic1 Pic1 Pic1 Pic1 Pic3 Pic3 Pic3 Pic4 Pic4 Pic4 Pic4"
+    "Pic1 Pic1 Pic1 Pic1 Pic1 Pic3 Pic3 Pic3 Pic4 Pic4 Pic4 Pic4";
+  height: 550px;
+}
+
+.om-bilder img {
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.Pic1 {
+  grid-area: Pic1;
+  margin: .3rem;
+}
+
+.Pic2 {
+  grid-area: Pic2;
+  margin: .3rem;
+}
+
+.Pic3 {
+  grid-area: Pic3;
+  margin: .3rem;
+}
+
+.Pic4 {
+  grid-area: Pic4;
+  margin: .3rem;
+}
+
+#ekstrior,
+#interior {
+  padding-top: 100px;
+  margin-top: -100px;
+  /* Compensate for the padding to maintain element positioning */
+}
 
 
+
+swiper-container {
+  --swiper-navigation-color: rgba(0, 0, 0, 0);
+}
 
 /** ################################################## MEDIA QUERIES ################################################## **/
 /** Small devices (landscape phones, 576px and up) **/
@@ -445,6 +534,10 @@ swiper-slide {
 @media (min-width: 992px) {
   :root {
     --container-max-width: 960px;
+  }
+
+  swiper-container {
+    --swiper-navigation-color: #fff;
   }
 }
 

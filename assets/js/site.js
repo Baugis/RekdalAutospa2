@@ -1,26 +1,26 @@
 /* SWIPER JS */
-const swiper = new Swiper('.swiper', {
-	// Optional parameters
-	direction: 'vertical',
-	loop: true,
+const swiperEl = document.querySelector('swiper-container')
 
-	// If we need pagination
-	pagination: {
-		el: '.swiper-pagination',
-	},
+const params = {
+  pagination: {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+  breakpoints: {
+    992: {
+      showSwitchArrows: false,
+    },
+  }
+}
 
-	// Navigation arrows
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
+Object.assign(swiperEl, params)
 
-	// And if we need scrollbar
-	scrollbar: {
-		el: '.swiper-scrollbar',
-	},
-});
+swiperEl.initialize();
 
 /* MIXITUP */
 var products = document.querySelector("#tjenester");
 var mixer = mixitup(products);
+
+

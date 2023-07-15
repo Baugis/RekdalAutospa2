@@ -24,31 +24,67 @@
     <link rel="stylesheet" href="">
 
     <!-- ############# Insert GA/GTM ############## -->
+
 </head>
 
 <body id="id-[[*id]]" class="tpl-standard w-100 h-100">
     <!-- HEADER START -->
     <header id="page-header" class="w-100 position-fixed">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3">
             <div class="container">
-                <a class="navbar-brand" href="#">Rekdal Autospa</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <a class="navbar-brand" href="./index.html"><img src="./assets/gfx/logo.png" alt=""></a>
+                <i class="fa-solid fa-bars fa-lg d-lg-none" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
                 <div class="collapse navbar-collapse" id="navbar">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-link" href="#">Hjem</a>
-                        <a class="nav-link" href="#">Tjenester</a>
-                        <a class="nav-link active" aria-current="page" href="#">Prisliste</a>
-                        <a class="nav-link" href="#">Kontakt</a>
-                    </div>
+                    <a class="navbar-nav ms-auto">
+                        <a class="nav-link" href="./index.html">Hjem</a>
+                        <a class="nav-link active" aria-current="page" href="./tjenester.html">Tjenester</a>
+                        <a class="nav-link" href="./priser.html">Priser</a>
+                        <a class="nav-link" href="./om.html">Om oss</a>
+                    </a>
                 </div>
             </div>
         </nav>
     </header>
     <!-- HEADER END -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-lg-down">
+            <div class="modal-content">
+                <div class="modal-body bg-primary">
+                    <div class="container d-flex flex-column">
+                        <div class="header-modal d-flex justify-content-between mb-4">
+                            <h2>Rekdal Autospa</h2>
+                            <div class="ms-auto"><i class="fa-solid fa-arrow-right-to-bracket fa-lg"
+                                    data-bs-dismiss="modal" aria-label="Close"></i></div>
+                        </div>
+                        <ul class="list-unstyled navbar-modal text-center">
+                            <li>
+                                <a href="./index.html">
+                                    <h3 class="my-4">Hjem</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./tjenester.html">
+                                    <h3 class="my-4">Tjenester</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./priser.html">
+                                    <h3 class="my-4">Priser</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./om.html">
+                                    <h3 class="my-4">Om oss</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--  MAIN  START -->
     <main id="main" class="mb-auto">
@@ -75,54 +111,79 @@
             </div>
 
             <div class="row mb-5">
-                <swiper-container class="mySwiper" space-between="30" slides-per-view="auto" pagination="true"
-                    pagination-clickable="true">
+                <swiper-container id="mySwiper" class="mySwiper" space-between="30" slides-per-view="auto"
+                    pagination="true" pagination-clickable="true" loop="true"
+                    navigation="true">
                     <swiper-slide class="d-xl-flex">
                         <div class="col-xl-4 position-relative mb-3">
-                            <img src="./assets/images/sanmeet-chahil-dveDkZQJVjQ-unsplash.jpg" alt="" class="img-fluid rounded-4">
+                            <img src="./assets/images/polering.jpg" alt="" class="img-fluid rounded-4">
                             <h3 class="position-absolute">Polering</h3>
                         </div>
                         <div class="col-xl-6 offset-xl-1">
-                            <p>Lakkorrigering er en mer omfattende versjon av polering. Her går man grovt til verks for å fjerne riper og struktur i lakken.Dette er mer arbeid enn polering, men resultatet blir blankere og mer ripefritt.Dette kan gjøres med en grov 2-3 stegs polering, eller våtsliping av lakken. Med våtsliping sliper vi ned lakken for å fjerne struktur som appelsinhud, og polerer opp for å få den blank.</p>
+                            <p>Lakkorrigering er en mer omfattende versjon av polering. Her går man grovt til verks for
+                                å fjerne riper og struktur i lakken.Dette er mer arbeid enn polering, men resultatet
+                                blir blankere og mer ripefritt.Dette kan gjøres med en grov 2-3 stegs polering, eller
+                                våtsliping av lakken. Med våtsliping sliper vi ned lakken for å fjerne struktur som
+                                appelsinhud, og polerer opp for å få den blank.</p>
                             <button class="btn btn-secondary mt-3">Bestill</button>
                         </div>
                     </swiper-slide>
                     <swiper-slide class="d-xl-flex">
                         <div class="col-xl-4 position-relative mb-3">
-                            <img src="./assets/images/hero.jpg" alt="" class="img-fluid rounded-4">
+                            <img src="./assets/images/coating.jpg" alt="" class="img-fluid rounded-4">
                             <h3 class="position-absolute">Coating</h3>
                         </div>
                         <div class="col-xl-6 offset-xl-1">
-                            <p>Lakkorrigering er en mer omfattende versjon av polering. Her går man grovt til verks for å fjerne riper og struktur i lakken.Dette er mer arbeid enn polering, men resultatet blir blankere og mer ripefritt.Dette kan gjøres med en grov 2-3 stegs polering, eller våtsliping av lakken. Med våtsliping sliper vi ned lakken for å fjerne struktur som appelsinhud, og polerer opp for å få den blank.</p>
+                            <p>Lakkorrigering er en mer omfattende versjon av polering. Her går man grovt til verks for
+                                å fjerne riper og struktur i lakken.Dette er mer arbeid enn polering, men resultatet
+                                blir blankere og mer ripefritt.Dette kan gjøres med en grov 2-3 stegs polering, eller
+                                våtsliping av lakken. Med våtsliping sliper vi ned lakken for å fjerne struktur som
+                                appelsinhud, og polerer opp for å få den blank.</p>
                         </div>
                     </swiper-slide>
                     <swiper-slide class="d-xl-flex">
                         <div class="col-xl-4 position-relative mb-3">
-                            <img src="./assets/images/andre-tan-pRppMPh4Zho-unsplash.jpg" alt="" class="img-fluid rounded-4">
+                            <img src="./assets/images/vask.jpg" alt="" class="img-fluid rounded-4">
                             <h3 class="position-absolute">Vask</h3>
                         </div>
                         <div class="col-xl-6 offset-xl-1">
-                            <p>Lakkorrigering er en mer omfattende versjon av polering. Her går man grovt til verks for å fjerne riper og struktur i lakken.Dette er mer arbeid enn polering, men resultatet blir blankere og mer ripefritt.Dette kan gjøres med en grov 2-3 stegs polering, eller våtsliping av lakken. Med våtsliping sliper vi ned lakken for å fjerne struktur som appelsinhud, og polerer opp for å få den blank.</p>
+                            <p>Lakkorrigering er en mer omfattende versjon av polering. Her går man grovt til verks for
+                                å fjerne riper og struktur i lakken.Dette er mer arbeid enn polering, men resultatet
+                                blir blankere og mer ripefritt.Dette kan gjøres med en grov 2-3 stegs polering, eller
+                                våtsliping av lakken. Med våtsliping sliper vi ned lakken for å fjerne struktur som
+                                appelsinhud, og polerer opp for å få den blank.</p>
                         </div>
                     </swiper-slide>
                     <swiper-slide class="d-xl-flex">
                         <div class="col-xl-4 position-relative mb-3">
-                            <img src="./assets/images/peter-pivak-cADdKC5X4j8-unsplash.jpg" alt="" class="img-fluid rounded-4">
+                            <img src="./assets/images/hero.jpg" alt="" class="img-fluid rounded-4">
                             <h3 class="position-absolute">Interiørrens</h3>
                         </div>
                         <div class="col-xl-6 offset-xl-1">
-                            <p>Lakkorrigering er en mer omfattende versjon av polering. Her går man grovt til verks for å fjerne riper og struktur i lakken.Dette er mer arbeid enn polering, men resultatet blir blankere og mer ripefritt.Dette kan gjøres med en grov 2-3 stegs polering, eller våtsliping av lakken. Med våtsliping sliper vi ned lakken for å fjerne struktur som appelsinhud, og polerer opp for å få den blank.</p>
+                            <p>Lakkorrigering er en mer omfattende versjon av polering. Her går man grovt til verks for
+                                å fjerne riper og struktur i lakken.Dette er mer arbeid enn polering, men resultatet
+                                blir blankere og mer ripefritt.Dette kan gjøres med en grov 2-3 stegs polering, eller
+                                våtsliping av lakken. Med våtsliping sliper vi ned lakken for å fjerne struktur som
+                                appelsinhud, og polerer opp for å få den blank.</p>
                         </div>
                     </swiper-slide>
                     <swiper-slide class="d-xl-flex">
                         <div class="col-xl-4 position-relative mb-3">
-                            <img src="./assets/images/martin-katler-yrvaagdXg7Q-unsplash.jpg" alt="" class="img-fluid rounded-4">
+                            <img src="./assets/images/hero.jpg" alt="" class="img-fluid rounded-4">
                             <h3 class="position-absolute">Skinnreperasjon</h3>
                         </div>
                         <div class="col-xl-6 offset-xl-1">
-                            <p>Lakkorrigering er en mer omfattende versjon av polering. Her går man grovt til verks for å fjerne riper og struktur i lakken.Dette er mer arbeid enn polering, men resultatet blir blankere og mer ripefritt.Dette kan gjøres med en grov 2-3 stegs polering, eller våtsliping av lakken. Med våtsliping sliper vi ned lakken for å fjerne struktur som appelsinhud, og polerer opp for å få den blank.</p>
+                            <p>Lakkorrigering er en mer omfattende versjon av polering. Her går man grovt til verks for
+                                å fjerne riper og struktur i lakken.Dette er mer arbeid enn polering, men resultatet
+                                blir blankere og mer ripefritt.Dette kan gjøres med en grov 2-3 stegs polering, eller
+                                våtsliping av lakken. Med våtsliping sliper vi ned lakken for å fjerne struktur som
+                                appelsinhud, og polerer opp for å få den blank.</p>
                         </div>
                     </swiper-slide>
+
+                    <!-- Navigation arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </swiper-container>
             </div>
         </div>
@@ -159,6 +220,20 @@
     <script src="assets/js/site.js"></script>
     <script type="module" src="./assets/js/bootstrap.js"></script>
     <script src="./assets/js/mixitup.js"></script>
+
+    <script>
+        /* NAVBAR SCROLL */
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            const scrolled = window.scrollY;
+
+            if (scrolled > 200) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 
 </html>

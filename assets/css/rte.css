@@ -91,4 +91,5 @@ html,body {	font-size: 18px; }
 
 /** HD devices (extra large desktops, 1540px and up) **/
 @media (min-width: 1540px) {
+	html,body {	font-size: 22px; }
 }

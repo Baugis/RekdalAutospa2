@@ -32,7 +32,7 @@
         <header id="page-header" class="w-100 position-fixed">
             <nav class="navbar navbar-expand-lg navbar-dark py-3">
                 <div class="container">
-                    <a class="navbar-brand" href="#">Rekdal Autospa</a>
+                    <a class="navbar-brand" href="./index.html"><img src="./assets/gfx/logo.png" alt=""></a>
                     <i class="fa-solid fa-bars fa-lg d-lg-none" data-bs-toggle="modal"
                         data-bs-target="#exampleModal"></i>
                     <div class="collapse navbar-collapse" id="navbar">
@@ -40,7 +40,7 @@
                             <a class="nav-link active" aria-current="page" href="./index.html">Hjem</a>
                             <a class="nav-link" href="./tjenester.html">Tjenester</a>
                             <a class="nav-link" href="./priser.html">Priser</a>
-                            <a class="nav-link" href="#">Kontakt</a>
+                            <a class="nav-link" href="./om.html">Om oss</a>
                         </a>
                     </div>
                 </div>
@@ -52,10 +52,6 @@
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen-lg-down">
                 <div class="modal-content">
-                    <!--  <div class="modal-header bg-primary">
-                        <h5 class="modal-title" id="exampleModalLabel">Rekdal Autospa</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div> -->
                     <div class="modal-body bg-primary">
                         <div class="container d-flex flex-column">
                             <div class="header-modal d-flex justify-content-between mb-4">
@@ -65,27 +61,28 @@
                             </div>
                             <ul class="list-unstyled navbar-modal text-center">
                                 <li>
-                                    <h3 class="my-4" aria-current="page" href="#">Hjem</h3>
+                                    <a href="./index.html">
+                                        <h3 class="my-4">Hjem</h3>
+                                    </a>
                                 </li>
                                 <li>
-                                    <h3 class="my-4" href="#">Tjenester</h3>
+                                    <a href="./tjenester.html">
+                                        <h3 class="my-4">Tjenester</h3>
+                                    </a>
                                 </li>
                                 <li>
-                                    <h3 class="my-4" href="#">Priser</h3>
+                                    <a href="./priser.html">
+                                        <h3 class="my-4">Priser</h3>
+                                    </a>
                                 </li>
                                 <li>
-                                    <h3 class="my-4" href="#">Kontakt</h3>
+                                    <a href="./om.html">
+                                        <h3 class="my-4">Om oss</h3>
+                                    </a>
                                 </li>
                             </ul>
-                            <div class="rekdal d-flex flex-column align-items-center mt-5">
-
-                            </div>
                         </div>
                     </div>
-                    <!-- <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -159,8 +156,8 @@
                             <h2 class="h2-number">01</h2>
                             <h4>Lidenskapelig</h4>
                             <p>Vår styrke ligger i våre tre dedikerte ansatte som er eksperter på bilpleie.</p>
-                            <a href="#" class="d-flex align-items-center mt-auto">Les mer<i
-                                    class="fa-solid fa-arrow-right-long ms-2"></i></a>
+                            <!-- <a href="#" class="d-flex align-items-center mt-auto">Les mer<i
+                                    class="fa-solid fa-arrow-right-long ms-2"></i></a> -->
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
@@ -169,8 +166,8 @@
                             <h4>Høy kvalitet</h4>
                             <p>Med over 2000 fornøyde kunder har vi etablert oss som en pålitelig leverandør av
                                 førsteklasses bilpleie.</p>
-                            <a href="#" class="d-flex align-items-center mt-auto">Les mer<i
-                                    class="fa-solid fa-arrow-right-long ms-2"></i></a>
+                            <!-- <a href="#" class="d-flex align-items-center mt-auto">Les mer<i
+                                    class="fa-solid fa-arrow-right-long ms-2"></i></a> -->
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
@@ -180,8 +177,8 @@
                             <p>Firmaet ble grunnlagt i 2014 med visjonen om å levere bilpleietjenester. Siden den
                                 gang
                                 har vi oppnådd et solid rykte basert på kvalitet.</p>
-                            <a href="#" class="d-flex align-items-center mt-auto">Les mer<i
-                                    class="fa-solid fa-arrow-right-long ms-2"></i></a>
+                            <!-- <a href="#" class="d-flex align-items-center mt-auto">Les mer<i
+                                    class="fa-solid fa-arrow-right-long ms-2"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -197,25 +194,25 @@
                     </div>
                     <div class="col-12">
                         <div class="row controls mb-3">
-                            <div class="col-3 text-center miu-col">
+                            <div class="col-4 text-center miu-col">
                                 <button class="miu-btn" type="button" data-filter="all"><i
                                         class="fa-solid fa-circle fa-2xs me-2 d-none d-sm-inline-block"></i>Siste</button>
                             </div>
-                            <div class="col-3 text-center miu-col">
+                            <div class="col-4 text-center miu-col">
                                 <button class="miu-btn" type="button" data-filter=".bil"><i
                                         class="fa-solid fa-circle fa-2xs me-2 d-none d-sm-inline-block"></i>Bil</button>
                             </div>
-                            <div class="col-3 text-center miu-col">
+                            <div class="col-4 text-center miu-col">
                                 <button class="miu-btn" type="button" data-filter=".bat"><i
                                         class="fa-solid fa-circle fa-2xs me-2 d-none d-sm-inline-block"></i>Båt</button>
                             </div>
-                            <div class="col-3 text-center miu-col">
+                            <!-- <div class="col-3 text-center miu-col">
                                 <button class="miu-btn" type="button" data-filter=".annet"><i
                                         class="fa-solid fa-circle fa-2xs me-2 d-none d-sm-inline-block"></i>Annet</button>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="row" id="prosjekter">
-                            <div class="col-md-6 col-lg-4 mb-4 mix bat">
+                            <div class="col-md-6 col-lg-4 mb-4 mix bil">
                                 <div class="prosjekter-box box1">
                                     <div
                                         class="prosjekter-info d-flex flex-column justify-content-center align-items-center">
@@ -224,34 +221,25 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-6 col-lg-4 mb-4 mix bat">
+                                <div class="prosjekter-box box7">
+                                    <div
+                                        class="prosjekter-info d-flex flex-column justify-content-center align-items-center">
+                                        <h3>Båt</h3>
+                                        <p>Polering, coating</p>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-md-6 col-lg-4 mb-4 mix bil">
-                                <div class="prosjekter-box box2">
+                                <div class="prosjekter-box box6">
                                     <div
                                         class="prosjekter-info d-flex flex-column justify-content-center align-items-center">
-                                        <h3>Audi Etron RS</h3>
+                                        <h3>Ferarri</h3>
                                         <p>Vask, polering, coating</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-4 mb-4 mix annet">
-                                <div class="prosjekter-box box3">
-                                    <div
-                                        class="prosjekter-info d-flex flex-column justify-content-center align-items-center">
-                                        <h3>Porche Panamera</h3>
-                                        <p>Vask, polering, coating</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 mb-4 mix bat">
-                                <div class="prosjekter-box box4">
-                                    <div
-                                        class="prosjekter-info d-flex flex-column justify-content-center align-items-center">
-                                        <h3>Porche 911 Turbo</h3>
-                                        <p>Vask, polering, coating</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 mb-4 mix bat">
+                            <div class="col-md-6 col-lg-4 mb-4 mix bil">
                                 <div class="prosjekter-box box5">
                                     <div
                                         class="prosjekter-info d-flex flex-column justify-content-center align-items-center">
@@ -261,25 +249,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 mb-4 mix bil">
-                                <div class="prosjekter-box box6">
-                                    <div
-                                        class="prosjekter-info d-flex flex-column justify-content-center align-items-center">
-                                        <h3>Porche Cayenne</h3>
-                                        <p>Vask, polering, coating</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 mb-4 mix bil">
-                                <div class="prosjekter-box box1">
-                                    <div
-                                        class="prosjekter-info d-flex flex-column justify-content-center align-items-center">
-                                        <h3>Porche 911 Turbo</h3>
-                                        <p>Vask, polering, coating</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 mb-4 mix annet">
-                                <div class="prosjekter-box box1">
+                                <div class="prosjekter-box box4">
                                     <div
                                         class="prosjekter-info d-flex flex-column justify-content-center align-items-center">
                                         <h3>Porche 911 Turbo</h3>
@@ -288,10 +258,64 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4 mb-4 mix bat">
-                                <div class="prosjekter-box box1">
+                                <div class="prosjekter-box box11">
                                     <div
                                         class="prosjekter-info d-flex flex-column justify-content-center align-items-center">
-                                        <h3>Porche 911 Turbo</h3>
+                                        <h3>Båt</h3>
+                                        <p>Polering, coating</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4 mix bil">
+                                <div class="prosjekter-box box3">
+                                    <div
+                                        class="prosjekter-info d-flex flex-column justify-content-center align-items-center">
+                                        <h3>Porche Panamera</h3>
+                                        <p>Vask, polering, coating</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4 mix bat">
+                                <div class="prosjekter-box box8">
+                                    <div
+                                        class="prosjekter-info d-flex flex-column justify-content-center align-items-center">
+                                        <h3>Båt</h3>
+                                        <p>Polering, coating</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4 mix bat">
+                                <div class="prosjekter-box box9">
+                                    <div
+                                        class="prosjekter-info d-flex flex-column justify-content-center align-items-center">
+                                        <h3>Båt</h3>
+                                        <p>Polering, coating</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4 mix bat">
+                                <div class="prosjekter-box box10">
+                                    <div
+                                        class="prosjekter-info d-flex flex-column justify-content-center align-items-center">
+                                        <h3>Båt</h3>
+                                        <p>Polering, coating</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4 mix bat">
+                                <div class="prosjekter-box box12">
+                                    <div
+                                        class="prosjekter-info d-flex flex-column justify-content-center align-items-center">
+                                        <h3>Båt</h3>
+                                        <p>Polering, coating</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4 mix bil">
+                                <div class="prosjekter-box box2">
+                                    <div
+                                        class="prosjekter-info d-flex flex-column justify-content-center align-items-center">
+                                        <h3>Audi Etron RS</h3>
                                         <p>Vask, polering, coating</p>
                                     </div>
                                 </div>
@@ -310,17 +334,15 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
                                             aria-expanded="false" aria-controls="flush-collapseOne">
-                                            Er det garanti på tjenestene
+                                            Hvilke tjenester tilbyr dere innen bilpleie?
                                         </button>
                                     </h2>
                                     <div id="flush-collapseOne" class="accordion-collapse collapse"
                                         aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur
-                                            adipiscing
-                                            elit. Vivamus tempor, mauris vitae pretium
-                                            mattis, tortor mauris molestie nisi.Lorem ipsum dolor sit amet,
-                                            consectetur
-                                            adipiscing elit.</div>
+                                        <div class="accordion-body">Vi tilbyr et bredt spekter av bilpleietjenester,
+                                            inkludert bilvask, polering, interiørrengjøring, lakkbeskyttelse,
+                                            rustbeskyttelse og mer. Vi tilpasser våre tjenester etter kundens behov og
+                                            bilens tilstand.</div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
@@ -328,17 +350,15 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
                                             aria-expanded="false" aria-controls="flush-collapseTwo">
-                                            Tilbyr du noe annet enn polering
+                                            Driver dere også med båtpleie? Hvilke tjenester tilbyr dere i så fall?
                                         </button>
                                     </h2>
                                     <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                         aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur
-                                            adipiscing
-                                            elit. Vivamus tempor, mauris vitae pretium
-                                            mattis, tortor mauris molestie nisi.Lorem ipsum dolor sit amet,
-                                            consectetur
-                                            adipiscing elit.</div>
+                                        <div class="accordion-body">Ja, vi tilbyr også båtpleietjenester. Dette
+                                            inkluderer båtvask, polering og beskyttelse av båtens gelcoat, rengjøring av
+                                            interiør, teakrengjøring og -behandling, samt fjerning av bunnstoff og
+                                            påføring av nytt bunnstoff.</div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
@@ -346,17 +366,49 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
                                             aria-expanded="false" aria-controls="flush-collapseThree">
-                                            Hvor mye koster en polerings maskin
+                                            Hvor lang tid tar det vanligvis å utføre en bilpleiebehandling?
                                         </button>
                                     </h2>
                                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                                         aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur
-                                            adipiscing
-                                            elit. Vivamus tempor, mauris vitae pretium
-                                            mattis, tortor mauris molestie nisi.Lorem ipsum dolor sit amet,
-                                            consectetur
-                                            adipiscing elit.</div>
+                                        <div class="accordion-body">Tiden det tar å utføre en bilpleiebehandling
+                                            varierer avhengig av flere faktorer, inkludert størrelsen på kjøretøyet,
+                                            tilstanden det er i, og hvilken type behandling som utføres. Som et generelt
+                                            estimat kan de fleste behandlinger fullføres innen noen få timer eller en
+                                            dag.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                            aria-expanded="false" aria-controls="flush-collapseFour">
+                                            Hvor ofte anbefales det å få utført bilpleie?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Frekvensen av bilpleie avhenger av flere faktorer,
+                                            inkludert kjøretøyets bruk og eksponering for ulike forurensninger. Som en
+                                            generell anbefaling kan det være lurt å få utført en grundig bilpleie hver
+                                            sjette til tolvte måned, avhengig av kjøretøyets behov.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFive">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                            aria-expanded="false" aria-controls="flush-collapseFive">
+                                            Hvordan kan jeg bestille en bil- eller båtpleietjeneste hos dere?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Du kan enkelt bestille en bil- eller
+                                            båtpleietjeneste hos oss ved å kontakte oss på telefon, e-post eller besøke
+                                            vår nettside. Vårt team vil gjerne hjelpe deg med å planlegge og bestille en
+                                            tid som passer deg best. Du kan også få informasjon om priser og spesifikke
+                                            tjenester vi tilbyr.</div>
                                     </div>
                                 </div>
                             </div>
@@ -396,29 +448,13 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/92cc2eddce.js" crossorigin="anonymous"></script>
-
-    <!-- MixItUp -->
     <script src="./assets/js/mixitup.js"></script>
-    <!-- Kategori valg funksjon-->
+    <script src="assets/js/site.js"></script>
+    <script type="module" src="./assets/js/bootstrap.js"></script>
     <script>
         var products = document.querySelector("#prosjekter");
         var mixer = mixitup(products);
 
-
-    </script>
-    <!-- Sorterings funksjon -->
-    <!-- <script>
-		var selectSort = document.querySelector(".select-sort");
-
-		selectSort.addEventListener("change", function () {
-			var order = selectSort.value;
-
-			mixer.sort(order);
-		});
-	</script> -->
-    <script src="assets/js/site.js"></script>
-    <script type="module" src="./assets/js/bootstrap.js"></script>
-    <script>
         /* NAVBAR SCROLL */
         window.addEventListener('scroll', function () {
             const navbar = document.querySelector('.navbar');
