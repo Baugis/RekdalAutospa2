@@ -172,6 +172,12 @@ select {
 
 
 /** ################################################## Custom styling start ########################################## **/
+
+/* MODAL */
+.navbar-modal li {
+  
+}
+
 #page-logo img {
   max-width: 15rem;
 }
@@ -180,8 +186,29 @@ select {
   z-index: 2;
 }
 
+header {
+  z-index: 3;
+}
+
+.navbar {
+  transition: all .3s;
+}
+
+.navbar i {
+  color: white;
+}
+
+.navbar.scrolled {
+  background-color: #0f1014;
+  transition: all .3s;
+}
+
 #navbar a {
   margin: 0 0.5rem;
+}
+
+.nav-link {
+  color: white;
 }
 
 #cover-img {
@@ -207,7 +234,7 @@ select {
 }
 
 .hero-text {
-  z-index: 2;
+  z-index: 1;
 }
 
 .hero-cover {

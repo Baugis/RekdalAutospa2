@@ -73,9 +73,11 @@ $accordion-padding-y:                             1.5rem;
 $accordion-body-padding-y:                        1rem;
 
 //Nav
-$navbar-dark-color:                               white;
 $navbar-nav-link-padding-x:                       0;
 $nav-link-padding-y:                              0.2rem;
+
+//Modal
+$spacer:                                          1rem 0;
 
 // Import Bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap.scss';

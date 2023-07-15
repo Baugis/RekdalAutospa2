@@ -30,34 +30,64 @@
     <div class="d-flex flex-column w-100 h-100 mx-auto">
         <!-- HEADER START -->
         <header id="page-header" class="w-100 position-fixed">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark py-3">
                 <div class="container">
                     <a class="navbar-brand" href="#">Rekdal Autospa</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <i class="fa-solid fa-bars fa-lg" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
                     <div class="collapse navbar-collapse" id="navbar">
-                        <div class="navbar-nav ms-auto">
+                        <a class="navbar-nav ms-auto">
                             <a class="nav-link active" aria-current="page" href="#">Hjem</a>
                             <a class="nav-link" href="#">Tjenester</a>
+                            <a class="nav-link" href="#">Priser</a>
                             <a class="nav-link" href="#">Kontakt</a>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </nav>
         </header>
         <!-- HEADER END -->
 
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen-lg-down">
+                <div class="modal-content">
+                   <!--  <div class="modal-header bg-primary">
+                        <h5 class="modal-title" id="exampleModalLabel">Rekdal Autospa</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div> -->
+                    <div class="modal-body bg-primary">
+                        <div class="container d-flex flex-column">
+                            <div class="header-modal d-flex justify-content-between mb-4">
+                                <h2>Rekdal Autospa</h2>
+                                <div class="ms-auto"><i class="fa-solid fa-arrow-right-to-bracket fa-lg" data-bs-dismiss="modal" aria-label="Close"></i></div>
+                            </div>
+                            <ul class="list-unstyled navbar-modal text-center">
+                                <li><h3 class="my-4" aria-current="page" href="#">Hjem</h3></li>
+                                <li><h3 class="my-4" href="#">Tjenester</h3></li>
+                                <li><h3 class="my-4" href="#">Priser</h3></li>
+                                <li><h3 class="my-4" href="#">Kontakt</h3></li>
+                            </ul>
+                            <div class="rekdal d-flex flex-column align-items-center mt-5">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
         <!--  MAIN  START -->
         <main id="main" class="mb-auto">
-
             <!-- HERO / COVER -->
             <div class="hero-cover bg-secondary">
                 <div class="container h-100">
                     <div class="row align-items-end h-100">
-                        <p>Profesjonell bilpleie med fokus på kvalitet og kundetilfredshet. Ved hjelp av kreativitet og
+                        <p>Profesjonell bilpleie med fokus på kvalitet og kundetilfredshet. Ved hjelp av kreativitet
+                            og
                             øye</p>
                     </div>
                 </div>
@@ -90,7 +120,8 @@
                     </div>
                     <div class="col-md-7">
                         <p>Vårt erfarne team sikrer det beste resultatet for din bilpleie. Med fokus på kvalitet og
-                            presisjon tar vi oss av hver minste detalj. Med toppmoderne utstyr og høykvalitetsprodukter
+                            presisjon tar vi oss av hver minste detalj. Med toppmoderne utstyr og
+                            høykvalitetsprodukter
                             leverer vi feilfritt arbeid som etterlater bilen din i enestående tilstand.
                         </p>
                         <a href="#" class="d-flex align-items-center">Les mer<i
@@ -106,8 +137,10 @@
                     <div class="col-12 text-center mb-3">
                         <h2 class="text-uppercase">Sammen for fornøyde kunder</h2>
                         <p>Vi jobber tett sammen med deg for å sikre din fulle tilfredshet. Din mening er viktig for
-                            oss, og vi strekker oss langt for å levere etter dine behov. Med klare kommunikasjonskanaler
-                            og personlig oppmerksomhet jobber vi i partnerskap for å sikre at du som kunde er fornøyd
+                            oss, og vi strekker oss langt for å levere etter dine behov. Med klare
+                            kommunikasjonskanaler
+                            og personlig oppmerksomhet jobber vi i partnerskap for å sikre at du som kunde er
+                            fornøyd
                             med resultatet.</p>
                     </div>
                     <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
@@ -133,7 +166,8 @@
                         <div class="bg-secondary p-3 rounded-1 h-100 d-flex flex-column">
                             <h2 class="h2-number">03</h2>
                             <h4>Pålitelig</h4>
-                            <p>Firmaet ble grunnlagt i 2014 med visjonen om å levere bilpleietjenester. Siden den gang
+                            <p>Firmaet ble grunnlagt i 2014 med visjonen om å levere bilpleietjenester. Siden den
+                                gang
                                 har vi oppnådd et solid rykte basert på kvalitet.</p>
                             <a href="#" class="d-flex align-items-center mt-auto">Les mer<i
                                     class="fa-solid fa-arrow-right-long ms-2"></i></a>
@@ -270,9 +304,11 @@
                                     </h2>
                                     <div id="flush-collapseOne" class="accordion-collapse collapse"
                                         aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
                                             elit. Vivamus tempor, mauris vitae pretium
-                                            mattis, tortor mauris molestie nisi.Lorem ipsum dolor sit amet, consectetur
+                                            mattis, tortor mauris molestie nisi.Lorem ipsum dolor sit amet,
+                                            consectetur
                                             adipiscing elit.</div>
                                     </div>
                                 </div>
@@ -286,9 +322,11 @@
                                     </h2>
                                     <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                         aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
                                             elit. Vivamus tempor, mauris vitae pretium
-                                            mattis, tortor mauris molestie nisi.Lorem ipsum dolor sit amet, consectetur
+                                            mattis, tortor mauris molestie nisi.Lorem ipsum dolor sit amet,
+                                            consectetur
                                             adipiscing elit.</div>
                                     </div>
                                 </div>
@@ -302,9 +340,11 @@
                                     </h2>
                                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                                         aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing
                                             elit. Vivamus tempor, mauris vitae pretium
-                                            mattis, tortor mauris molestie nisi.Lorem ipsum dolor sit amet, consectetur
+                                            mattis, tortor mauris molestie nisi.Lorem ipsum dolor sit amet,
+                                            consectetur
                                             adipiscing elit.</div>
                                     </div>
                                 </div>
@@ -365,6 +405,19 @@
 	</script> -->
     <script src="assets/js/site.js"></script>
     <script type="module" src="./assets/js/bootstrap.js"></script>
+    <script>
+        /* NAVBAR SCROLL */
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            const scrolled = window.scrollY;
+
+            if (scrolled > 200) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 
 </html>
