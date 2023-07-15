@@ -237,7 +237,7 @@ header {
 
 .hero-cover {
   width: 50vw;
-  height: 100%;
+  height: 100vh;
   position: absolute;
 }
 
