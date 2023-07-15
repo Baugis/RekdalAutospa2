@@ -241,12 +241,6 @@ header {
   z-index: 1;
 }
 
-.hero-cover {
-  width: 50vw;
-  height: 100vh;
-  position: absolute;
-}
-
 .h2-number {
   font-weight: 500;
   color: #5f5e61;
