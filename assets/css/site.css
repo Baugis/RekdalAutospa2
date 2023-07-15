@@ -223,6 +223,12 @@ header {
 }
 
 /* HERO */
+.hero-cover {
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  align-items: flex-end;
+}
 
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero.jpg");
