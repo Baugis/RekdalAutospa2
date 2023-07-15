@@ -207,6 +207,7 @@ header {
 
 .nav-link {
   color: white;
+  padding-bottom: 0.2rem;
 }
 
 #cover-img {
@@ -404,6 +405,11 @@ swiper-slide {
 /* Footer */
 .logo {
   height: 55px;
+}
+
+/* Contact form */
+.FloatingButton__FloatingButtonContainer-sc-q5md4t-0 {
+  position: absolute;
 }
 
 
